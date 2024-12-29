@@ -30,7 +30,8 @@ export default defineConfig({
     ],
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
-      themes: { light: "night-owl", dark: "night-owl" },
+      theme: "night-owl",
+      defaultColor: "dark",
       wrap: true,
     },
   },
