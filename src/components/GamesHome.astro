@@ -1,0 +1,11 @@
+---
+import * as greatPost from '../content/games/HullAndVoidHome.md';
+import SectionLayout from "@layouts/SectionLayout.astro";
+const games = Object.values(import.meta.glob('../content/games/*.md', { eager: true }));
+---
+
+
+  <!-- {games.map(post => {<AboutLayout {...post.data} ></GamesLayout>})} -->
+  {
+    <SectionLayout {...greatPost} set:html={greatPost.compiledContent()} />
+  } 

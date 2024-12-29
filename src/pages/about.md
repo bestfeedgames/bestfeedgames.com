@@ -3,34 +3,15 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+We are a two-person team, both contributing to the game’s design, and specialising in different aspects of its development. Each of us have over five years of experience in games adjacent development at an Australian company using games technology for industrial simulation, training and visualisation.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+The team consists of Tom Schofield, a 3D Artist who currently works as a lecturer teaching Games Art and Design, and 'Azza', a programmer who currently works on industrial simulations and training. We have professionally collaborated on projects for several years and look forward to focusing our skills on a game project beyond a game jam.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+We are passionate about the prospect of developing this game both professionally and personally. Professionally, each of us have been growing our skills over the years and are ready for the challenge of creating a commercial game. Together we have created several projects for game jams and many serious games projects such as industrial training and visualisation, but we are ready and excited to create this game, having already created many of its core systems and assets. 
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+The game is drawing on many inspirations, including other games, films, books and history. Each of us have added ideas to the project for what to us is not only an exciting game, but a chance to explore themes of science fiction through our own lens and create a social space for us and others to enjoy together.
 
-## Tech Stack
+## Meta
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+We have used the template [Astro Paper](https://astro.build/themes/details/astropaper/) for this website. Please star his [repo](https://github.com/satnaing/astro-paper/) if you like the design!
 
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
