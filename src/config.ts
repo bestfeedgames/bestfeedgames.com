@@ -6,7 +6,7 @@ export const SITE: Site = {
   profile: "https://satnaing.dev/",
   desc: "A website for the indie game duo, creating the game 'Hull and Void'",
   title: "Best Feed Games",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "hull-and-void-og.jpg",
   lightAndDarkMode: false,
   postPerIndex: 2,
   postPerPage: 5,
