@@ -6,6 +6,12 @@ const games = Object.values(import.meta.glob('../content/games/*.md', { eager: t
 
 
   <!-- {games.map(post => {<AboutLayout {...post.data} ></GamesLayout>})} -->
-  {
-    <SectionLayout {...greatPost} set:html={greatPost.compiledContent()} />
-  } 
+<section>
+  {<SectionLayout {...greatPost} set:html={greatPost.compiledContent()} />}
+</section>
+
+<style>
+  section {
+  @apply pb-4 pt-6;
+  }
+</style>

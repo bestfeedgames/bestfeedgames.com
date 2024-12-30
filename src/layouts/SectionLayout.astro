@@ -11,14 +11,15 @@ export interface Props {
 const { frontmatter } = Astro.props;
 ---
 
-<div>
-    <h2>{frontmatter.title}</h2>
-    <p><slot /></p>
-</div>
+<h2>{frontmatter.title}</h2>
+<p><slot/></p>
 
 <style>
     h2 {
-      @apply inline-block text-2xl font-semibold tracking-wide;
+      @apply mb-5 inline-block text-2xl font-semibold tracking-wide;
+    }
+    #hull-and-void {
+    @apply pb-6 pt-8;
     }
 </style>
   

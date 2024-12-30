@@ -15,6 +15,7 @@ export interface Props {
   pubDatetime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
+  noIndex?: boolean;
 }
 
 const {
@@ -27,6 +28,7 @@ const {
   pubDatetime,
   modDatetime,
   scrollSmooth = false,
+  noIndex = false,
 } = Astro.props;
 
 const socialImageURL = new URL(
@@ -55,7 +57,6 @@ const structuredData = {
 <html
   lang=`${LOCALE.lang ?? "en"}`
   class={`${scrollSmooth && "scroll-smooth"}`}
-  data-theme="dark"
 >
   <head>
     <meta charset="UTF-8" />
@@ -69,6 +70,9 @@ const structuredData = {
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="author" content={author} />
+
+    { noIndex && (<meta name="robots" content="noindex" />) }
+
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
@@ -135,7 +139,6 @@ const structuredData = {
 
     <ViewTransitions />
 
-    <script is:inline src="/toggle-theme.js" async></script>
   </head>
   <body>
     <slot />

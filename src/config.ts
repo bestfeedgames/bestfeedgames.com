@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://bestfeedgames.com/", // replace this with your deployed domain
+  website: "https://bestfeedgames.com", // replace this with your deployed domain
   author: "Best Feed Games",
   profile: "https://satnaing.dev/",
   desc: "A website for the indie game duo, creating the game 'Hull and Void'",
