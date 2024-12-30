@@ -141,6 +141,16 @@ const structuredData = {
 
   </head>
   <body>
-    <slot />
+    <div class="contentmargin">
+      <slot />
+    </div>
   </body>
 </html>
+<style>
+    .contentmargin 
+    {
+      @apply mx-auto max-w-3xl w-full px-4;
+      backdrop-filter: blur(40px);
+
+    }
+</style>
