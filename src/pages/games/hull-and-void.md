@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/GamesLayout.astro"
 title: "Hull and Void"
-activeNav: "about"
+activeNav: "hull-and-void"
 ---
 
 ![Hull and Void 1](assets/images/hull-and-void-1.png "Hull and Void 1")
