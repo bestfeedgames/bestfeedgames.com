@@ -18,7 +18,7 @@ const { activeNav } = Astro.props;
         {
           LOGO_IMAGE.enable ? (
             <img
-              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
+              src={'/assets/logo.png'}
               alt={SITE.title}
               width={LOGO_IMAGE.width}
               height={LOGO_IMAGE.height}
@@ -162,18 +162,22 @@ const { activeNav } = Astro.props;
   }
   .nav-container {
     @apply mx-auto flex flex-col items-center justify-between sm:flex-row;
+    min-height: 90px;
   }
   .top-nav-wrap {
     @apply relative flex w-full items-start justify-between sm:items-center sm:py-8;
   }
   .logo {
-    @apply absolute my-2 text-xl font-semibold sm:static sm:text-2xl;
+    @apply absolute my-2 text-xl font-semibold sm:text-2xl;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
   }
   .hamburger-menu svg {
     @apply h-6 w-6 scale-125 fill-skin-base;
+  }
+  .addOffset {
+    margin-top: 50px;
   }
 
   nav {
@@ -245,6 +249,7 @@ const { activeNav } = Astro.props;
         menuExpanded ? "Open Menu" : "Close Menu"
       );
       menuItems?.classList.toggle("display-none");
+      menuItems?.classList.toggle("addOffset");
     });
   }
 

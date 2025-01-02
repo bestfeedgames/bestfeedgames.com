@@ -11,6 +11,7 @@ import getSortedPosts from "@utils/getSortedPosts";
 import { SITE, SOCIALS } from "@config";
 import RssFeed from "@components/widgets/RssFeed.astro";
 import GamesHome from "@components/GamesHome.astro";
+import BreadcrumbsBlank from "@components/BreadcrumbsBlank.astro";
 
 
 const posts = await getCollection("blog");
@@ -24,14 +25,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
 <Layout>
   <Header />
+  <BreadcrumbsBlank />
   <main id="main-content">
-    <section id="hero">
+    <div id="hero">
       <h1>Best Feed Games</h1>
-
       <p>
         We are a game developer duo working on a new game called 'Hull and Void'. Stay tuned while we create more content for our game.
       </p>
-    
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -41,7 +41,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           </div>
         )
       }
-    </section>
+    </div>
 
     <Hr />
 
@@ -107,15 +107,15 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pb-4 pt-6;
+    @apply mb-4 mt-6;
   }
-  #hero h1 {
-    @apply mb-5 text-3xl font-bold  sm:text-5xl;
+  
+  #main-content h1 {
+    @apply mb-5 text-2xl font-semibold sm:text-3xl;
   }
 
-  #hero p {
-    @apply my-5;
-  }
+
+
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
